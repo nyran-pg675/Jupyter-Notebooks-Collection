@@ -1,0 +1,48 @@
+# 3. Arithmetic operation 
+a = 5 
+b = 5
+
+#Addition 
+print(a+b)
+print(a-b)
+print(a/b)
+print(a*b)
+
+print(a//b)  # Floor divison (keeps only the whole number)
+print(a%b) # modules (remainder) 5 goes into 5 1 times (because 5 × 1 = 6)
+# What’s left? 5 − 5 = 0
+print(a**b)
+
+# Comparison operation 
+x = 10
+y = 5
+
+print(x == y) # Equal 
+print(x != y) # not equal
+print(x > y) # true
+print(x < y)
+print(x >= y)
+print(x <= y)
+
+
+# Logic operation 
+# and, or, not
+
+print("----------------")
+print(x>5 and y<10)
+print(x<5 or y>10)
+
+# not true -> false 
+# not false -> true
+
+print(not(x>5 and y<10)) # Making it false even tho it is true 
+
+print("--------------------------")
+# Membership opeation 
+# in 
+my_list = [1,2,3,4,5]
+print(6 in my_list)
+print(1 in my_list)
+print(6 not in my_list)
+
+
