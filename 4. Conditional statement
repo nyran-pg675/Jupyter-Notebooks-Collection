@@ -1,0 +1,53 @@
+# Conditional_statement to test if true or false, if its true it will execute 
+
+# if satement 
+
+age = 20
+if age>=18:
+   print("You are an adult")
+
+print("---------------------")
+
+# if -else statement 
+age = 25 # Limit 
+if age>=26: # Less than (child), more than (adult)
+   print("You are a child")
+else:
+   print("You are an adult")
+
+print("---------------------")
+
+# if-elf -esle statement 
+marks = 90 # Limit
+if marks>=85:
+   print("Grade A+")
+elif marks>=80:
+   print("Grade A")
+elif marks>=70:
+   print("Grade B")
+elif marks>=60:
+   print("Grade C")
+elif marks>=50:
+   print("Grade D")
+else:
+   print("Fail")
+
+print("--------------------")
+
+# example1
+age = int(input("Enter your age: "))
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")
+
+print("-----------------------")
+
+# example2
+age = int(input("enter your age?: "))
+citizen = input("Are you a citizen of the country (Yes/No)")
+
+if age>= 18:
+   pass
+else:
+   print("You are not eligible to vote")
