@@ -1,0 +1,51 @@
+def greet(name): # def is a function 
+   print(f"Hello, {name}")  # f-string formatting lets you insert variables directly inside strings
+greet(name='Nyran Abraham Tahija')
+
+# Using a Function(How to write a function)
+def determin_grade(marks):
+  if marks>=90:
+    print("Grade A+")
+  elif marks>=85:
+    print("Grade A")
+  elif marks>=75:
+    print("Grade A-")
+  else:
+    print("grade B")
+determin_grade(74) # this is often used
+
+# Using Direct Conditional Logic (That is the difference)
+mark = int(input("Enter your marks:")) 
+if mark >= 25:
+   print("Grade A+")
+elif mark >= 20:
+   print("Grade A")
+else:
+   print("Grade B")
+
+# More examples
+def add(a, b):
+   return(a+b)
+a = 5
+b = 5
+
+result = add(a, b)
+print(f"The sum of {a} and {b} is {result}")
+print(add(5,5))
+
+def multiply(a, b):
+   return(a*b)
+print(multiply(5,5))
+
+def introduction(name, age):
+    print(f"My name is {name}, I am {age}")
+introduction("Nyran Abraham Tahija", 25)     # This is often used in function and prefereable
+print(introduction(name= "Nyran Abraham Tahija", age = 25)) # This is not prefer to use. 
+
+def is_even(number):
+   if number%2 == 0:
+     return True
+   else:
+     return False
+print(is_even(4))
+
