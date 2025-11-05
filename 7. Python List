@@ -1,0 +1,66 @@
+# Python list
+fruits = ['apple','pear','mango','orange'] # string list
+numbers = [1,2,3,4,5] # number list
+mixed = ['red', 8, 3.155] # mixed category 
+
+# accessing list elements 
+# normal indexing/positive indexing
+print(fruits[1])
+
+# normal indexing/negative indexing
+print(fruits[-4]) # Python also allows you to count from the end of the list, using negative indexes:
+
+
+
+# List slicing
+fruits = ['apple','coconut','mango','orange','grapes']
+print(fruits[1:3])
+print(fruits[1:4])
+
+print(fruits[:3]) # not mention start therefore, 0 to 3 exlude 3
+print(fruits[2:]) # start from 2 all the ways
+
+fruits[1] = 'Pear' # change coconut to Pear
+print(fruits)
+
+# List methods
+fruits = ['apple','coconut','mango','orange','grapes']
+
+# Apprend: add items to the end of the list 
+
+fruits.append('Rice')
+print(fruits)
+
+#Insert(index, items) Insert at a specific index
+fruits.insert(0,'bhai')
+print(fruits)
+
+# remove (item) remove the first occurance of the item
+fruits.remove('bhai')
+print(fruits)
+
+# pop: remove the last item
+fruits.pop() # not idexing number is assign, therefore it will automatically remove the last iterm
+print(fruits)
+
+fruits.pop(0) # not idexing number is assign, therefore it will automatically remove the last iterm
+print(fruits)
+# del: remove an item at a specific index
+del fruits[0]
+print(fruits)
+
+# sort: sorts the list in an asceding order
+fruits.sort()
+print(fruits)
+
+# reverse: reverse the list
+fruits.reverse()
+print(fruits)
+
+# count(item: returns the count of that item)
+fruits = ['apple','coconut','mango','orange','grapes','apple']
+print(fruits.count('apple'))
+
+#Clear: remove all the items
+fruits.clear()
+print(fruits)
