@@ -1,0 +1,35 @@
+# tupels associated with Methods
+# Immutable: You can change a tuple after it has been defined 
+# ordered, and indexed it uses ()
+
+
+fruits = ('apple','pear','mango','orange') # string list
+numbers = (1,2,3,4,5) # number list
+mixed = ('red', 8, 3.155) # mixed category 
+
+# accessing list elements 
+print(fruits[0])
+
+# List slicing
+fruits = ('apple','coconut','mango','orange','grapes','apple','apple')
+print(fruits[1:3]) # exclude 3
+print(fruits[1:4]) # exclude 4
+
+print(fruits[:3]) # not mention start therefore, 0 to 3 exlude 3
+print(fruits[2:]) # start with 2
+
+# Tuole methods
+# fruits[1] = "pie" # error change the item
+
+# count 
+print(fruits.count('apple'))
+
+# index
+print(fruits.index('orange'))
+
+# Tuple packing and unpacking
+person = ("Nyran Abraham Tahija", 25, "Environmental Sciencist")
+name, age, occupation = person
+print(name)
+print(age)
+print(occupation)
