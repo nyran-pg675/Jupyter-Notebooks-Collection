@@ -1,57 +1,68 @@
-# variables in python
+# 1. variables in python
 # Variables refers to labels container that hold information we want to use in our programming
+# You can think of it as a “name tag” for a piece of data.
 name = "Nyran"
 print(name)
 
 x = 10
-print(10)
+print(x)
 
 # Rules for python
 # How to declare variables in python
-# Variables must be A-z or a-z
+# Variable names can contain letters (A–Z, a–z), numbers (0–9), and underscores (_).
 # Cannot use number infornt of variables, can use underscore
 # Very Sensitive
 
 # Data Types
 
-#String
+#String   text data, always enclosed in quotes.
 name = "Nyran"
 print(type(name))
 
-# Interger
+# Interger Whole numbers without decimals.
 a = 10
 print(type(a))
 
-# Float
+# Float Numbers with decimal points.
 x = 20.4
 print(type(x))
 
-# Boolean
+# Boolean True or False values, used for logic.
 is_student = True
 print(type(is_student))
 
-# list() ordered, changeable, allow duplicate
+# Collection Data Types
+# Collections allow storing multiple values in one variable
+
+# list() ordered, changeable (mutable), allow duplicate []
 fruits = ["apple", "banana", "cherry"] # Square bracket
 print(fruits)
 print(type(fruits))
 
-# tuple() ordered, unchangeable, allow duplicate
+# tuple() ordered, unchangeable (immutable), allow duplicate, index ()
 fruits = ("apple", "banana", "cherry") # Parenthesis
 print(fruits)
 print(type(fruits))
 
-# set() unordered, unchangeable, no duplicate
+# set() unordered, changeable (mutable), no duplicate, no indexing {}
 fruits = {"apple", "banana", "cherry","apple"} # Curly bracket
 print(fruits)
 print(type(fruits))
 
-# dictionary () unordered, changeable, no duplicate
+# dictionary () unordered, changeable, no duplicate, indexing {key: value}
+# Stores key–value pairs
 fruits = {"name" : "apple", "color" : "red"} # Cury bracket, [] = variable inside dict
 print(fruits)
 print(type(fruits))
+
+# Accessing values:
 print(fruits["name"])
 print(fruits["color"])
+
+# Delete an item:
 del fruits["name"]  # delete name
 print(fruits)
+
+# Change a value:
 fruits["color"] = "Yellow"  # Change a value
 print(fruits["color"])
