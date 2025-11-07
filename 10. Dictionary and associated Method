@@ -1,0 +1,62 @@
+# Dictionary with associate Method
+# {key: values}
+
+student_info = {
+    'Name': 'Nyran Abraham Tahija',
+    'Age' : 25,
+    'Department' : 'Earth and Environmental Science'
+
+}
+
+# Accessing dictionary values
+print(student_info['Department'])
+
+# Changing values
+student_info['Age'] = 26
+print(student_info)
+
+# Add key values
+student_info['Grade'] = 'A+'
+print(student_info)
+
+# Looping dictionaries
+#keys only
+for key in student_info.keys():
+    print(key)
+
+for key in student_info:
+  print(key)
+
+# values only
+for value in student_info.values():
+    print(value)
+
+# Key: values
+for key, value in student_info.items():
+   print(f"key: {key}, value: {value}")
+
+
+print('_____________________')
+
+
+# Dictionary methods
+
+# keys 
+print(student_info.keys())
+
+#values 
+print(student_info.values())
+
+#Items method combine both key and values
+print(student_info.items())
+
+# pop and del
+student_info.pop('Age') # remove age 
+print(student_info)
+del student_info['Name']
+print(student_info)
+
+
+# Clear(): remove all the items 
+student_info.clear()
+print(student_info)
