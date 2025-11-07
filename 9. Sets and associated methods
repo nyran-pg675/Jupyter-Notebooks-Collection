@@ -1,0 +1,42 @@
+# Sets and associated methods (no indexing)
+# unordered, mutable, no duplicate: Will be often using sets
+
+fruits = {'apple','orange','banana','apple'} # string list
+numbers = {1,2,3,4,5} # number list
+mixed = {'red', 8, 3.155} # mixed category
+
+print(fruits) # not duplicate
+
+# empty_set = {} # dictionary no words written inside the curly bracket (automatically dict)
+empty_set = set() # set()
+
+# accessing set values
+# print(fruits[1]) gives error # no indexing
+# unordered
+
+# for fruit in fruits:
+# print(fruit)
+
+# set methods
+fruits.add('pear')
+print(fruits)
+
+# add multiple items
+fruits.update(['mango','grapes'])
+print(fruits)
+
+# remove
+fruits.remove('pear')
+print(fruits)
+
+# pop(): remove random items
+fruits.pop() # since set is not in order, any items will be remove
+print(fruits)
+
+#fruits.remove('apple')
+#print(fruits)
+
+#clear set()
+fruits.clear()
+print(fruits)
+
