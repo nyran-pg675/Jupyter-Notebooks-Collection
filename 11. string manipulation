@@ -1,0 +1,48 @@
+# string manipulation
+text = 'Nyran'
+print(len(text))
+
+# concanenation
+text_updated = text + 'Abraham'
+print(text_updated)
+
+# String Slicing
+print(text[1:3]) # it will print 1 and 2 only exclude 3
+
+print(text[:3]) # Start from 0 to 2 exlude 3
+
+print(text[2:]) # include 2 all the way
+
+
+# String operation
+s = " java basics "
+
+#upper
+print(s.upper())
+
+# lower
+print(s.lower())
+
+# title
+print(s.title()) # Every first word capital
+
+# strip method
+print(s.strip()) #extra space is removed
+
+#replace (old, new)
+print(s.replace('java','python'))
+
+#split(separator)
+s = s.strip()
+print(s.split(" "))
+
+# Join list into a string
+word = ['Hello','Nyran']
+print(" ".join(word)) # Call join on a string separator
+
+# Escape character
+#\n -> new line
+print("Hello\nNyran!")
+
+# tab space
+print("hello\tNyran") # add t
