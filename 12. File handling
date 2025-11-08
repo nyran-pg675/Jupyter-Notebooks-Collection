@@ -1,0 +1,21 @@
+# file handling 
+# open()
+# syntax
+# open('filepath_with_path','mode')
+
+# read - r
+# write -w
+# append -a
+
+#write 
+with open('test.text','w') as file:
+   file.write("This is the basics of python!\n")
+
+# append
+with open('test.text', 'a') as file:
+    file.write("Appending more data\n")
+    
+# read
+with open('test.text', 'r') as file:
+    for f in file:
+        print(f.strip())
