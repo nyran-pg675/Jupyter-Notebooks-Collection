@@ -1,0 +1,38 @@
+Error handling is the process of writing code that can detect and respond to runtime errors (mistakes that happen while a program is running).
+Python uses try, except, else, and finally blocks to handle these errors gracefully so your program doesn’t crash unexpectedly.
+
+try:  # This block contains code that might cause an error / Python will try to run this code.
+    a = 5
+    b = 0
+    print(a / b)
+except: # If an error occurs inside the try block / Python will skip the rest of the try code and jump to except.
+    print("Can't divide by zero")
+
+output: Can't divide by zero
+
+try:
+    # risky code
+except:
+    # runs if there is an error
+else:
+    # runs if there is no error
+finally:
+    # runs no matter what happens
+
+Explanation of Each Block:
+try-Code that might raise an error.
+except-Code that runs only if an error occurs.
+else-Code that runs only if no error occurs.
+finally-Code that always runs, whether there was an error or not (useful for cleanup tasks, like closing files or database connections).
+
+Example function with try, except, and finally 
+def divide(a, b):
+  try:
+      results = (a/b)
+      print(results)
+  except:
+        print("Can't divide by zero")
+  finally:
+        print("This will always execute")
+
+divide(5,0)
