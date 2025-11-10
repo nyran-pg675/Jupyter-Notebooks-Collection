@@ -1,0 +1,41 @@
+from os import EX_TEMPFAIL
+# Classes and objects
+# inside classes, we have constructor and different methods
+
+# The following __init__ function is defined outside of any class and is not acting as a constructor.
+# It's kept here as it was in the original code, but typically __init__ is a method within a class.
+# def __init__(self, paramter1, parameter2):
+#     self.parameter1 = parameter1
+#     self.parameter2 = parameter2
+
+# define the syntax of methods
+class Person:
+   def __init__(self, name, age, email):
+    self.name = name
+    self.age = age
+    self.email = email
+   def describe_person(self):
+    print(f"The name of the person is: {self.name}, his age is: {self.age}, and email address is: {self.email}")
+
+person1 = Person('Nyran Abraham Tahija', 25, 'nyrantahija3@gmail.com')
+person2 = Person('Gary Tahija,', 14, 'garytahija4@gmail.com')
+
+person1.describe_person()
+person2.describe_person()
+
+class Circle:
+  def __init__(self, radius):
+    self.radius = radius
+
+  def calculate_area(self):
+    return 3.14 * self.radius ** 2
+
+  def circle_parameter(self):
+    return 2 * 3.1416 * self.radius
+
+circle1 = Circle(5)
+circle2 = Circle(6.5)
+
+
+print(circle1.calculate_area())
+print(circle1.circle_parameter())
