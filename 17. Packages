@@ -1,0 +1,8 @@
+# Packages 
+# Think of a package in Python like a folder on your laptop that contains
+# multiple files, and each file is a modules
+# A collection of modules grouped together inside a folder, usually with an
+# __init__.py
+
+# from my package import my_module
+# This is how we import modules form packages, and we create packages
