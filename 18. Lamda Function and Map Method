@@ -1,0 +1,40 @@
+# Lamda Function and Map Method
+# A lambda function is just a tiny, quick, one-line function without a name.
+
+# Syntax
+# lambda paramter : Expression/code
+
+# Normal function
+#def add(x, y):
+  #return(x+y)
+
+#add_short = lambda x, y: x + y
+#print(add_short(5, 6))
+
+
+# Map 
+# map() applies a function to every item in a list (or any iterable).
+
+# syntax
+# map(function, list)
+
+# example-double numbers
+#nums = [1,2,3,4,5,6]
+
+# nums_double =[]
+
+#for num in nums:
+ # print(num * 2)
+
+
+#print(nums_double)
+
+double = map(lambda x: x*2, nums)
+print(list(double))
+
+double = list(map(lambda x: x*2, nums))
+print(double)
+
+# You can use list method()
+
+    
