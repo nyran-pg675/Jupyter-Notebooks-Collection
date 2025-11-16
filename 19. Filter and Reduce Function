@@ -1,0 +1,23 @@
+# Filter and Reduce Function 
+# To pick out only the items you want from a list based on a condition.
+
+# Syntax
+# filter(function, iterable_items)
+
+nums = [1, 2, 3, 4, 5, 6, 8, 9, 10]
+
+even_nums = list(filter(lambda x: x % 2 == 0, nums))
+  
+print(even_nums)
+
+
+# syntax
+# reduce(function, iterable)
+
+from functools import reduce
+
+sums = reduce(lambda x, y: x + y, nums)
+print(sums)
+
+product = reduce(lambda x, y: x * y, nums)
+print(product)
