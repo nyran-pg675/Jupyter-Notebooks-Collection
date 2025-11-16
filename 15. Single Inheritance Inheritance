@@ -1,0 +1,41 @@
+# Single Inheritance Inheritance is basically Python’s way of letting one
+# class borrow or reuse stuff from another class. Think of it like a child
+# inheriting traits from a parent — same vibe.
+
+# Example:
+# You create a Animal class with eat() and sleep()
+# Then your Dog and Cat classes can just inherit that instead of writing it again.
+
+# It helps you group related classes.
+# Like:
+# Vehicle → parent class
+# Car, Bike, Bus → child classes
+
+# Parent class
+class pet_animal:
+  def __init__(self, name):
+    self.name = name
+
+  def behaviour(self):
+    print(f"{self.name} like his owner very much and loves to cuddle!")
+
+# child class
+class dog(pet_animal):
+  def bark(self):
+    print(f"{self.name} barks to stranger!")
+
+  def dog_behaviour(self):
+    print(f"{self.name} like to play throw and fectch!")
+
+dog1 = dog('Tommy')
+dog1.bark()
+dog1.behaviour()
+dog1.dog_behaviour()
+
+
+# Another child class
+class cat(pet_animal):
+  def meow(self):
+    print(f"{self.name} meows to stranger!")
+cat1 = cat("Blacky")
+cat1.meow()
