@@ -1,0 +1,21 @@
+# create python environment 
+# to create a virtul python environment, you are supposed to 
+# write the codes under terminal environemt in visual code. 
+
+#synthx
+# python -m venv test_environemnt1
+# if you want to check, click on interpretor and select the environment which 
+# you have created.
+
+# If you are to activate 
+# test_environmnet\scripts\activate
+# if you want to deactive, type deactive. 
+
+# In real world, you will be using more external modules
+# to install any packages in visual studio 
+# go to visual studio, under the terminal section, type (pip install shapely)
+# to install any packages, then press enter! for any new environment.
+# 
+
+
+
