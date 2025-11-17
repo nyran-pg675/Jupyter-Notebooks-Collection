@@ -1,0 +1,45 @@
+# Basics modules
+# The simple, built-in Python modules that provide essential functions you need for everyday programming.
+
+import math, random, sys, os, time
+
+# math 
+print(math.sqrt(9)) # finds the square root of 9
+print(math.ceil(7.5)) # rounds a number up to the nearest integer
+print(math.floor(7.5)) # rounds down to the nearest integer
+
+
+# random
+print(f"Random number:{random.randint(1, 10)}") # generates a random integer between 1 and 10, inclusive.
+fruits = ['banana', 'apple', 'orange', 'pear','watermelon']
+print(random.choice(fruits))
+
+random.shuffle(fruits)
+print(fruits)
+
+# os
+print(os.getcwd())   # shows current working directory
+print(os.listdir()) 
+
+# os.mkdir ("new_folder_os") Creates a new folder (directory) named
+# new_folder_os in your current working location. os.rmdir ("new_folder_os")
+# os.remove ("test.txt") 
+
+# sys
+# Exit a program → sys.exit()
+# Get Python version → sys.version
+# Access command-line arguments → sys.argv
+
+# print(sys.path)
+
+# math → math functions (sqrt, sin, cos, pi)
+# random → random numbers
+# datetime → dates and time
+# os → operating system commands (paths, folders)
+# sys → system information, command-line arguments
+
+# time
+print("start")
+print(time.time())
+time.sleep(5)
+print(time.time)
