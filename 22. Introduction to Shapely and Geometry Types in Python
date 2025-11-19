@@ -1,0 +1,38 @@
+Shapely is a powerful Python library used for working with geometric objects — points, lines, and polygons. It’s widely used in geospatial analysis, GIS workflows, and spatial data processing because it follows well-established geometric rules (the OGC Simple Features standard).
+With Shapely, you can easily create, analyze, and manipulate geometry objects directly in Python. This makes it super handy for tasks like distance calculation, buffering, intersections, area measurements, and preparing spatial datasets.
+
+Shapely provides several core geometry types:
+Point – represents a single x,y coordinate
+LineString – a connected sequence of points forming a line
+Polygon – an area defined by a closed ring of coordinates
+MultiPoint, MultiLineString, MultiPolygon – collections of points, lines, or polygons
+GeometryCollection – a mix of multiple geometry types
+
+These geometry types allow you to perform rich spatial operations such as overlaps, intersections, unions, buffering, simplification, and more. In short, Shapely helps bring GIS-style geometry capabilities into pure Python workflows, making it a key tool for spatial analysis and geodata processing in Jupyter Notebooks.
+
+import shapely
+from shapely.geometry import Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon
+Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygon
+
+# Point (Longtitude, and latitude): Point: Represents a single coordinate, such as longitude and latitude.
+
+point = Point(2, 3)
+print(point)
+point
+
+# LineString LineString: A line created from a list of coordinate pairs.
+Line
+LineString ( python_list)
+line = LineString([(0,0), (1,2), (2,3)])
+print(line)
+line
+
+# Polygon Polygon: A closed shape made from a sequence of coordinates, where the first and last points match.
+Polygon
+Polygon ( python_list)
+
+polygon = Polygon([(0,0), (4,0), (4,3), (0,3), (0,0)])
+print(polygon)
+polygon
+
+polygon.is_valid You can check polygon validity with:
